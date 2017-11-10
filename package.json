@@ -1,0 +1,27 @@
+{
+  "name": "hrsf83-mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-dev": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackreactor/hrsf83-mvp.git"
+  },
+  "author": "Jackson Christoffersen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackreactor/hrsf83-mvp/issues"
+  },
+  "homepage": "https://github.com/hackreactor/hrsf83-mvp#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
