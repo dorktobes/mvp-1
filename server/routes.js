@@ -1,5 +1,7 @@
 const router = require('express').Router();
+const path = require('path');
 const controllers = require('./controllers');
+
 
 router.route('/')
 .get((req, res) => {
@@ -8,20 +10,19 @@ router.route('/')
 
 router.route('/login')
 .get((req, res) => {
-  // new session
+  res.sendFile(path.resolve('./server/views/static/login.html'));
+  res.end();
 })
 .post((req, res) => {
-  res.render('../client/static/login.html');
-  res.end();
+  // new session
 })
 
 router.route('/signup')
 .get((req, res) => {
-  // new user
+  res.sendFile(path.resolve('./server/views/static/signup.html'));
 })
 .post((req, res) => {
-  res.render('../client/static/signup.html');
-  res.end();
+  // new user
 })
 
 module.exports = router;

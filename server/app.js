@@ -8,6 +8,8 @@ const router = require('./routes.js');
 
 const app = express();
 
+app.use(express.static(__dirname + '/../client/static'));
+
 app.use(bodyParser.json());
 app.use(router);
 
