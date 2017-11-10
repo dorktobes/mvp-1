@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  Lyft Vs Uber allows riders to compare pricing between competing ride sharing apps
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  Now it will be easier for users of Uber and Lyft to save money by selecting the provider with the best deal
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  Lyft Vs Uber allows users to see a simple comparison of prices between these two apps and select whcih trip they wish to take. The app also also users to keep track of their trips and see which option they're using the most
 
 ## Problem ##
-  > Describe the problem your product solves.
+  It's annoying to flip back and forth between the Uber and Lyft apps to compare pricing. When it's late saturday night and you're sitting on the edge of the sidewalk discouraged by ridesharing apps complex systems trying to tell you your trip home is going to cost somewhere between 1 and 3 limbs, Lify Vs Uber will let you know quickly whewre the best deal is
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  The solution is simple: put pricing head to head on the same page with a simple and consistent UI.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "This app will revolutionize the industry of comparing Lyft rides to Uber rides"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Just visit the app and type in your cirrent location and destination. It's that simple.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "Last night I save three dollars by using Lyft Vs. Uber. Did you know Burger King has a deal where you can get two whoppers for $6? Well guess who could afford a whopper for lunch today."
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  If you want to try Lyft Vs Uber yourself, visit the webpage!
