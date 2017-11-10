@@ -14,7 +14,7 @@ router.route('/login')
   res.end();
 })
 .post((req, res) => {
-  // new session
+  //new session
 })
 
 router.route('/signup')
@@ -22,7 +22,7 @@ router.route('/signup')
   res.sendFile(path.resolve('./server/views/static/signup.html'));
 })
 .post((req, res) => {
-  // new user
+  controllers.users.post(req, res);
 })
 
 module.exports = router;
