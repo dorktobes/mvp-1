@@ -2,6 +2,9 @@ db = require('../database');
 
 module.exports = {
   post: params => {
-    console.log('You\'ve made it this far');
+    db.user.findOne({ where: {username: 'Luke'}})
+    .then(user => {
+      console.log(user.dataValues.id);
+    });
   }
 };
