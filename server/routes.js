@@ -9,18 +9,11 @@ router.route('/')
 })
 
 router.route('/login')
-.get((req, res) => {
-  res.sendFile(path.resolve('./server/views/static/login.html'));
-  res.end();
-})
 .post((req, res) => {
   //new session
 })
 
 router.route('/signup')
-.get((req, res) => {
-  res.sendFile(path.resolve('./server/views/static/signup.html'));
-})
 .post((req, res) => {
   controllers.users.post(req, res);
 })

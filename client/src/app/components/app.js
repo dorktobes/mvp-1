@@ -5,5 +5,5 @@ angular.module('lyft-vs-uber')
     
   },
   
-  templateUrl: 'src/templates/app.html'
+  templateUrl: 'app/templates/app.html'
 })
