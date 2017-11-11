@@ -22,7 +22,7 @@ router.route('/signup')
 //debugging routes
 router.route('/debug')
 .get((req, res) => {
-  models.lyftRides.get();
+  models.uberRides.get();
   res.end();
 })
 module.exports = router;
