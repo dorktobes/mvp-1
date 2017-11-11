@@ -1,0 +1,5 @@
+https://developer.lyft.com/v1/docs/authentication
+https://developer.lyft.com/reference#availability-ride-estimates
+https://developer.uber.com/docs/riders/references/api/v1.2/estimates-price-get
+https://developer.uber.com/docs/riders/guides/authentication/server-token
+https://medium.com/@zamarrowski/angular-1-x-component-based-application-with-webpack-and-es6-dfab450f2df4
