@@ -1,4 +1,4 @@
-models = require('../models');
+const models = require('../models');
 
 module.exports.post = (req, res) => {
   models.users.post();

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const path = require('path');
 const controllers = require('./controllers');
+const models = require('./models'); //for debugging
 
 
 router.route('/')
@@ -18,4 +19,10 @@ router.route('/signup')
   controllers.users.post(req, res);
 })
 
+//debugging routes
+router.route('/debug')
+.get((req, res) => {
+  models.lyftRides.get();
+  res.end();
+})
 module.exports = router;
