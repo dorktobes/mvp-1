@@ -9,7 +9,7 @@ const router = require('./routes.js');
 const app = express();
 
 //static assets
-app.use(express.static(__dirname + '/../client/static'));
+app.use(express.static(__dirname + '/../client/src'));
 
 app.use(bodyParser.json());
 app.use(router);
