@@ -1,4 +1,4 @@
-db = require('../database');
+const db = require('../database');
 
 module.exports = {
   post: params => {

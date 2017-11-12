@@ -1,5 +1,5 @@
-Promise = require('bluebird');
-request = Promise.promisifyAll(require('request'));
+const Promise = require('bluebird');
+const request = Promise.promisifyAll(require('request'));
 
 let accessTokenPromise = 
 // //stub so I'm not spamming ou=auth for access tokens

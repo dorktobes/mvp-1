@@ -27,7 +27,8 @@ router.route('/rideInfo')
 //debugging routes
 router.route('/debug')
 .get((req, res) => {
-  models.lyftRides.get();
+  models.coordinates.get('15 olney ct')
+  .then(coords => console.log(coords));
   res.end();
 })
 module.exports = router;
