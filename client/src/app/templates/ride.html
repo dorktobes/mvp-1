@@ -2,4 +2,5 @@
   <div class='provider'>{{$ctrl.provider}}</div>
   <div class='price'>${{$ctrl.rideInfo.price}}</div>
   <div class='info'>Estimated time: {{$ctrl.rideInfo.time / 60}} min</div>
+  <button class='btn' ng-click="$ctrl.takeRide($ctrl.provider)">I took {{$ctrl.provider}}</button>
 </div>
