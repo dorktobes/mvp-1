@@ -19,10 +19,15 @@ router.route('/signup')
   controllers.users.post(req, res);
 })
 
+router.route('/rideInfo')
+.get((req, res) => {
+  controllers.rideInfo.get(req, res);
+})
+
 //debugging routes
 router.route('/debug')
 .get((req, res) => {
-  models.uberRides.get();
+  models.lyftRides.get();
   res.end();
 })
 module.exports = router;

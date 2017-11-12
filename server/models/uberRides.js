@@ -17,7 +17,12 @@ module.exports = {
         }
     })
     .then(res => {
-      console.log(res.body);
+      let body = JSON.parse(res.body);
+      let rideInfo = {};
+      let rideType = 2; //uberX
+      rideInfo.price = body.prices[rideType].high_estimate;
+      rideInfo.time = body.prices[rideType].duration;
+      return rideInfo;
     });
   }
 };
