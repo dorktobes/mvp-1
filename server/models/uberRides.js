@@ -2,7 +2,7 @@ const Promise = require('bluebird');
 const request = Promise.promisifyAll(require('request'));
 
 module.exports = {
-  get: (start={lat: 37.7838038, lng:-122.3989875}, end={lat: 37.7836924, lng:-122.4089666}) => {
+  get: (start, end) => {
     return request.getAsync({
       url: 'https://api.uber.com/v1.2/estimates/price',
       qs: {

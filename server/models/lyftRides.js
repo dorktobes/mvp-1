@@ -25,7 +25,7 @@ new Promise((resolve, reject) => {
 })
 
 module.exports = {
-  get: (start={lat: 37.7838038, lng:-122.3989875}, end={lat: 37.7836924, lng:-122.4089666}) => {
+  get: (start, end) => {
     return accessTokenPromise
     .then(token => {
       return request.getAsync({
