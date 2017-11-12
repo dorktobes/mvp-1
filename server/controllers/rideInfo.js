@@ -5,7 +5,7 @@ const models = require('../models');
 module.exports.get = (req, res) => {
   let query = url.parse(req.url, true).query;
   let startAddress = query.start;
-  let endAddress = query.end; 
+  let endAddress = query.end;
   
   Promise.all([
     models.coordinates.get(startAddress),

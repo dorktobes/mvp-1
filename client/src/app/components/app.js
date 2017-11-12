@@ -2,10 +2,17 @@ angular.module('lyft-vs-uber')
 
 .component('app', {
   controller: function(rideInfo) {
-    rideInfo.getInfo({start:{lat: 37.7836924, lng:-122.4089666}, end:{lat: 37.7838038, lng:-122.3989875}})
-    .then(data => {
-      this.rideInfo = data;
-    });
+
+    this.search = (start, end) => {
+      console.log('searching..');
+      rideInfo.getInfo(start, end)
+      .then(data => {
+        console.log('response received!');
+        this.rideInfo = data;
+      });
+    };
+    
+    this.search('hack reactor', 'dolores park');
     
     //dummy data
     // this.rideInfo = {

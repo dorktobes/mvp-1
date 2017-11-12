@@ -1,1 +1,15 @@
-search
+<div class='search'>
+  <div>
+    <div>
+      Start:
+      <input type='text' ng-model='start'/>
+    </div>
+    <div>
+      End:
+      <input type='text' ng-model='end'/>
+    </div>
+  </div>
+  <button class='btn' ng-click="$ctrl.search(start, end)">
+    <span class='glyphicon glyphicon-search'></span>
+  </button>
+</div>
