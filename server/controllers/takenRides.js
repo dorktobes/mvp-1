@@ -15,6 +15,10 @@ module.exports = {
   },
   
   post: (req, res) => {
-    
+    models.takenRides.post(req.body)
+    .then(() => {
+      res.writeHead(201);
+      res.end();
+    })
   }
 };

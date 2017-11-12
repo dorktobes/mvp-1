@@ -6,6 +6,6 @@ module.exports = {
   },
   
   post: params => {
-    //TODO
+    return db.takenRide.create(params);
   }
 };
