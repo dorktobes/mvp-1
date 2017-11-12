@@ -17,12 +17,12 @@ module.exports = {
         }
     })
     .then(res => {
-      let body = JSON.parse(res.body);
-      let rideInfo = {};
-      let rideType = 2; //uberX
-      rideInfo.price = body.prices[rideType].high_estimate;
-      rideInfo.time = body.prices[rideType].duration;
-      return rideInfo;
+      let estimates = JSON.parse(res.body).prices;
+      let uberX = estimates.find(estimate => estimate.localized_display_name === 'uberX'); //uberX
+      return {
+        price: uberX.high_estimate,
+        time: uberX.duration
+      };
     });
   }
 };

@@ -45,7 +45,7 @@ module.exports = {
       let estimates = JSON.parse(res.body).cost_estimates;
       let lyft = estimates.find(estimate => estimate.ride_type === 'lyft');
       return {
-        price: lyft.estimated_cost_cents_max,
+        price: lyft.estimated_cost_cents_max / 100,
         time: lyft.estimated_duration_seconds
       };
     });
