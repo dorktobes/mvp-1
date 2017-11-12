@@ -4,11 +4,6 @@ const controllers = require('./controllers');
 const models = require('./models'); //for debugging
 
 
-router.route('/')
-.get((req, res) => {
-  res.end('Hello, myself!');
-})
-
 router.route('/login')
 .post((req, res) => {
   //new session
@@ -22,6 +17,14 @@ router.route('/signup')
 router.route('/rideInfo')
 .get((req, res) => {
   controllers.rideInfo.get(req, res);
+})
+
+router.route('/takenRides')
+.get((req, res) => {
+  controllers.takenRides.get(req, res);
+})
+.post((req, res) => {
+  controllers.takenRides.post(req, res);
 })
 
 //debugging routes
