@@ -1,6 +1,6 @@
 <div class="col-sm-6">
   <div class="block">
-    <div class="provider text-center">{{$ctrl.provider}}</div>
+    <img class="logo img-rounded center-block" ng-src="/img/{{$ctrl.provider === 'Uber' ? 'uber.jpg' : 'lyft.png'}}">
     <div class="price lead">${{$ctrl.rideInfo.price}}</div>
     <div class="info text-center"><p>Estimated time: {{$ctrl.rideInfo.time / 60}} min</p></div>
     <button class="btn center-block" ng-click="$ctrl.takeRide($ctrl.provider)">I took {{$ctrl.provider}}</button>

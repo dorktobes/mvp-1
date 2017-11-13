@@ -2,6 +2,10 @@ body {
   background-color: hsla(114, 50%, 60%, 1);;
 }
 
+label {
+  font-weight: 400;
+}
+
 .search .btn {
   width: 20%;
 }
@@ -14,7 +18,10 @@ body {
   margin: 8px 0px;
 }
 
-.ride .provider {
+.logo {
+  height: 140px;
+  width: 140px;
+  margin-bottom: 8px;
 }
 
 .price {
