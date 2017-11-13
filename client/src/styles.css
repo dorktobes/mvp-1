@@ -1,4 +1,31 @@
-.ride {
-  border: 1px solid black;
-  border-radius: 10px;
+body {
+  background-color: hsla(114, 50%, 60%, 1);;
+}
+
+.search .btn {
+  width: 20%;
+}
+
+.block {
+  background-color: ghostwhite;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px;
+  margin: 8px 0px;
+}
+
+.ride .provider {
+}
+
+.price {
+  text-align: center;
+  font-size: 40px;
+}
+
+.ride .btn {
+  margin: auto;
+}
+
+.row {
+
 }
